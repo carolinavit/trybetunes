@@ -24,7 +24,8 @@ class Login extends Component {
     });
   }
 
-  async insertUser() {
+  async insertUser(e) {
+    e.preventDefault();
     this.setState({
       loading: true,
     });
